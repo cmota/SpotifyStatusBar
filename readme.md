@@ -1,3 +1,4 @@
-#Spotify Status Bar
+SpotifyStatusBar
+================
 
-A simple application that displays the current song being played on Spotify.
+A simple application which display a notification when a music starts on Spotify.
