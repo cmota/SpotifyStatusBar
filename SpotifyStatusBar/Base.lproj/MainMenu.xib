@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="494" customClass="CMAppDelegate">
+            <connections>
+                <outlet property="playState" destination="XNr-QH-mqV" id="2oa-61-HMj"/>
+                <outlet property="songName" destination="lPq-e1-mSw" id="hTR-fP-AIx"/>
+                <outlet property="statusMenu" destination="Phx-xE-qid" id="FD2-jH-eWp"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <menu id="Phx-xE-qid">
+            <items>
+                <menuItem title="Song " id="lPq-e1-mSw" colorLabel="IBBuiltInLabel-Red">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Play/Pause" id="XNr-QH-mqV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="playAction:" target="494" id="TNI-Wv-Stg"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Next" id="fe1-d9-Kf9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="nextAction:" target="494" id="k1N-y6-N5C"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Previous" id="xY0-GV-uNG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="previousAction:" target="494" id="KZ6-U2-wnn"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
